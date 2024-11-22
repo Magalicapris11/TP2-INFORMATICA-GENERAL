@@ -1,46 +1,113 @@
-<!---PAGINA INICIO-->
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/estilo.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sancreek&family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Francesca Woodman</title>
-</head>
-<body>
-
-    <!-- Título y subtítulo -->
-    <header>
-        <h1>Francesca Woodman</h1>
-        <h2>Poeta Visual</h2>
-    </header>
-
-    <!-- Botón para galería visual -->
-    <div>
-        <a href="geleria_visual/index.html" class="btn-galeria">Galería Visual</a>
+  </head>
+  <body>
+    <div
+      class="container-fluid fondo-imagen d-flex flex-column align-items-center justify-content-center"
+      style="background-image: url('./galeria_fotos/fondo.jpg'); height: 100vh"
+    >
+      <nav
+        class="navbar navbar-expand-lg nav-underline fixed-top fs-2 justify-content-start"
+        style="font-family: Silkscreen, sans-serif; width: 20%"
+      >
+        <div class="container"></div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="biografia/index.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Biografía
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="biografia/carrera.html"
+                    >Carrera</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="obras_fotograficas/index.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Obras
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="obras_fotograficas/tecnica.html"
+                    >Técnica</a
+                  >
+                </li>
+                 
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="estilo_temas/index.html">Estilo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="estilo_temas/"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Galería
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <h1 class="display-1 "style="font-family: Sancreek, serif; color: black" >FRANCESCA WOODMAN</h1>
+        <div>
+          <div class="poeta-visual">
+            <h2 class="display-2"style="font-family: Sancreek, serif; color: white ">La Poeta Visual</h2>
+          </div>
+          <div class="position-absolute bottom-30 start-50 translate-middle-x ">
+            <img src="./img/mariposa.gif" alt="GIF" class="mariposa-sobre-boton">
+            <a href="geleria_visual/index.html" class=" boton btn btn-primary btn-lg boton-inicio border border-black border-5"role="button" style="font-family: Silkscreen, sans-serif; font-size: 38px; background-color: cadetblue;border-radius: 5px" >Galería Visual</a>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- Menú de navegación principal -->
-    <ul class="menu">
-        <li><a href="biografia/index.html">Biografía</a>
-            <ul class="submenu">
-                <li><a href="biografia/carrera.html">Carrera</a></li>
-            </ul>
-        </li>
-        <li><a href="obras_fotograficas/index.html">Obras</a>
-            <ul class="submenu">
-                <li><a href="obras_fotograficas/series.html">Series de fotos</a></li>
-                <li><a href="obras_fotograficas/tecnica.html">Técnica</a></li>
-            </ul>
-        </li>
-        <li><a href="estilo_temas/index.html">Estilo</a>
-        
-        </li>
-        <li><a href="geleria_visual/index.html/">Galería</a>
-            <ul class="submenu">
-                <li><a href="geleria_visual/descripciones.html">Descripción</a></li>
-            </ul>
-        </li>
-    </ul>
-
-</body>
+  </body>
 </html>

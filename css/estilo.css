@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+}
+.navbar-nav .nav-link:first-child {
+    color: red;
+  }
+  .container-fluid {
+    min-height: 100vh; /* Asegurar que ocupe toda la altura de la ventana */
+  }
+  .content {
+    flex: 1; /* Hacer que el contenido ocupe el espacio restante */
+    padding: 20px; /* Agregar espacio alrededor del contenido */
+  }
+  .fondo-imagen {
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    display: flex; /* Convierte el elemento en un contenedor flex */
+    align-items: center; /* Centra verticalmente el contenido dentro del contenedor */
+    justify-content: center; /* Centra horizontalmente el contenido dentro del contenedor   
+   */
+  }
+  .poeta-visual {
+  padding-left: 5rem; /* Adjust margin as needed */
+  }
+  /*BOTON MARIPOSA*/
+  .mariposa-sobre-boton {
+    position: absolute; /* Posiciona la mariposa absolutamente dentro del botón */
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    z-index: 1;
+}
+  .boton {
+    position: relative; /* Hace que el botón sea un contenedor de posición */
+    overflow: hidden; /* Oculta cualquier contenido que exceda los límites del botón */
+}
+
